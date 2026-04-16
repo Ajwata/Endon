@@ -1,0 +1,11 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" rx="64" fill="url(#bg)"/>
+  <circle cx="128" cy="128" r="88" fill="white" fill-opacity="0.98"/>
+  <text x="128" y="145" text-anchor="middle" font-family="Times New Roman, Georgia, serif" font-size="132" font-style="italic" font-weight="700" fill="#0145F2">ἔ</text>
+  <defs>
+    <linearGradient id="bg" x1="34" y1="26" x2="218" y2="232" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D73FF"/>
+      <stop offset="1" stop-color="#0145F2"/>
+    </linearGradient>
+  </defs>
+</svg>
