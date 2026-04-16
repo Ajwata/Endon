@@ -2411,7 +2411,7 @@ body::before {
 .site-footer {
   width: 100%;
   background: #0145f2;
-  padding: 100px 80px;
+  padding: 100px 80px 18px;
 }
 
 .site-footer__inner {
@@ -2575,7 +2575,7 @@ body::before {
 
 .footer-copy {
   margin: auto 0 0;
-  padding-top: 58px;
+  padding-top: 50px;
   text-align: center;
   color: rgba(255, 255, 255, 0.72);
   font-size: 11px;
@@ -2731,7 +2731,7 @@ body::before {
   }
 
   .site-footer {
-    padding: 80px 40px;
+    padding: 80px 40px 18px;
   }
 
   .site-footer__top {
@@ -2942,7 +2942,7 @@ body::before {
   }
 
   .site-footer {
-    padding: 64px 20px;
+    padding: 64px 20px 16px;
   }
 
   .footer-brand-name {
