@@ -140,6 +140,7 @@
 
   /* ── FAQ accordion ───────────────────────────────────── */
   function closeFaq(answer) {
+    answer.classList.add('is-closing');
     const currentHeight = answer.scrollHeight;
     answer.style.height = `${currentHeight}px`;
     answer.classList.remove('is-open');
@@ -151,6 +152,7 @@
     const handleClose = () => {
       answer.hidden = true;
       answer.style.height = '';
+      answer.classList.remove('is-closing');
       answer.removeEventListener('transitionend', handleClose);
     };
 
@@ -158,6 +160,7 @@
   }
 
   function openFaq(answer) {
+    answer.classList.remove('is-closing');
     answer.hidden = false;
     answer.style.height = '0px';
 

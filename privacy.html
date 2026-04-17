@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Endon — Privacy Policy</title>
     <meta name="description" content="Endon Privacy Policy" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,36 +15,219 @@
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
+  <body id="top">
+    <header class="nav-bar" data-anim="fade-down">
+      <div class="nav-inner">
+        <a class="brand-mark" href="./index.html#top" aria-label="Endon home">
+          <span class="brand-glyph">ἔ</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="./index.html#features">HOW IT WORKS</a>
+          <a href="./index.html#about">ABOUT</a>
+          <a href="./index.html#team">TEAM</a>
+          <a href="./index.html#join">CONTACT</a>
+        </nav>
+      </div>
+    </header>
+
     <main class="legal-page">
       <section class="legal-hero">
-        <a class="legal-back" href="./index.html">← Back to Endon</a>
-        <p class="legal-kicker">ENDON LEGAL</p>
+        <a class="legal-back" href="./index.html#top">← Back to Endon</a>
+        <p class="legal-kicker">ENDON LEGAL DOCUMENTS</p>
         <h1>Privacy Policy</h1>
-        <p class="legal-lead">This policy explains what data we collect, why we collect it, and how we protect your privacy.</p>
+        <p class="legal-lead">Version 1.0 — March 2026. This policy explains what personal data we collect, why we collect it, how we protect it, and what rights you have under GDPR.</p>
       </section>
 
       <section class="legal-content">
-        <h2>What we collect</h2>
-        <p>We collect account data, app usage data, and the content you provide such as conversations, mood logs, and journal entries.</p>
+        <article class="legal-block">
+          <h2>1. Who We Are And How To Contact Us</h2>
+          <p>Endon ("we", "us", "our") is the maker of the Endon emotional wellbeing app and acts as data controller for personal data processed through the app.</p>
+          <p>For privacy requests or complaints: customer@endonspace.com. You may also contact the Hellenic Data Protection Authority: www.dpa.gr.</p>
+        </article>
 
-        <h2>How we use your data</h2>
-        <ul>
-          <li>To provide and improve Endon features.</li>
-          <li>To personalize support based on your usage.</li>
-          <li>To maintain security and service reliability.</li>
-          <li>To comply with legal obligations.</li>
-        </ul>
+        <article class="legal-block">
+          <h2>2. What This Policy Covers</h2>
+          <p>This policy applies to your use of the Endon app, the website at https://endonspace.com, and associated services. By using Endon, you confirm you have read and understood this policy.</p>
+        </article>
 
-        <h3>Data protection</h3>
-        <p>Data is encrypted in transit and at rest, stored on EU infrastructure, and handled under GDPR requirements.</p>
+        <article class="legal-block">
+          <h2>3. What Data We Collect</h2>
+          <h3>3.1 Data You Give Us Directly</h3>
+          <ul>
+            <li>Account information: email, display name, date-of-birth confirmation, country, language preference, password.</li>
+            <li>Wellbeing content: conversations, journal entries, mood check-ins, exercise responses, reflections.</li>
+            <li>Feedback data: ratings, thumbs up/down signals, and voluntary feedback.</li>
+            <li>Support communications and subscription confirmation data from payment providers.</li>
+          </ul>
+          <h3>3.2 Data Collected Automatically</h3>
+          <ul>
+            <li>Technical data: device type, OS, app version, IP address, device identifier.</li>
+            <li>Usage and performance data: session activity, navigation patterns, crash logs, error reports.</li>
+            <li>IP addresses are retained for up to 90 days, then anonymized.</li>
+          </ul>
+        </article>
 
-        <h3>Your rights</h3>
-        <p>You can request access, correction, export, or deletion of your data. You can also withdraw consent and close your account.</p>
+        <article class="legal-block">
+          <h2>4. Special Category Emotional Wellbeing Data</h2>
+          <p>Conversations, journal entries, and mood data are special category personal data under GDPR Article 9. We process this data only with explicit consent to provide the Endon service.</p>
+          <ul>
+            <li>Never sold to third parties.</li>
+            <li>Never used for advertising.</li>
+            <li>You can withdraw consent and delete data at any time.</li>
+          </ul>
+        </article>
 
-        <h3>Contact</h3>
-        <p>For privacy questions: customer@endonspace.com</p>
+        <article class="legal-block">
+          <h2>5. Lawful Bases For Processing</h2>
+          <ul>
+            <li>Contract: delivering and operating the Endon service.</li>
+            <li>Explicit consent (Article 9(2)(a)): processing emotional wellbeing data.</li>
+            <li>Vital interests (Article 9(2)(c)): crisis safety situations.</li>
+            <li>Legitimate interests: security, personalization, and service improvement using de-identified data.</li>
+            <li>Legal obligation: required compliance processing.</li>
+          </ul>
+        </article>
+
+        <article class="legal-block">
+          <h2>6. Data Retention</h2>
+          <ul>
+            <li>Conversation content and journal entries: until deletion/account closure plus 7 days.</li>
+            <li>Mood check-ins and session metadata: up to 2 years.</li>
+            <li>Crisis flag records: up to 5 years.</li>
+            <li>Payment records: 7 years (Greek tax requirements).</li>
+            <li>Technical logs: 90 days, then anonymized.</li>
+          </ul>
+        </article>
+
+        <article class="legal-block">
+          <h2>7. AI And Automated Processing</h2>
+          <p>Endon uses AI to personalize support, suggest relevant techniques, and detect distress patterns. As required by EU AI Act Article 50, you are informed that you are interacting with AI.</p>
+          <p>Automated processing does not make legally significant automated decisions under GDPR Article 22, and Endon maintains clinical oversight protocols.</p>
+        </article>
+
+        <article class="legal-block">
+          <h2>8. Data Sharing</h2>
+          <p>We do not sell your data and do not share it with advertisers. Data is shared only with contracted service providers, where legally required, in emergency vital-interest cases, or in business transfer scenarios with equivalent safeguards.</p>
+        </article>
+
+        <article class="legal-block">
+          <h2>9. International Transfers</h2>
+          <p>Data is primarily stored and processed within the EU/EEA. If transfer outside the EU/EEA is required, we apply approved safeguards such as Standard Contractual Clauses.</p>
+        </article>
+
+        <article class="legal-block">
+          <h2>10. Security Measures</h2>
+          <ul>
+            <li>End-to-end encryption for conversations and journals.</li>
+            <li>AES-256 encryption at rest and TLS 1.3 in transit.</li>
+            <li>EU-based infrastructure, strict access controls, and regular security testing.</li>
+          </ul>
+        </article>
+
+        <article class="legal-block">
+          <h2>11. Data Breach Procedure</h2>
+          <p>In a breach event, we assess and contain quickly, notify the supervisory authority where required, and notify affected users where high risk exists.</p>
+        </article>
+
+        <article class="legal-block">
+          <h2>12. Your GDPR Rights</h2>
+          <ul>
+            <li>Access, rectification, erasure, restriction, portability, and objection rights.</li>
+            <li>Right to withdraw consent at any time.</li>
+            <li>Right to lodge a complaint with the Hellenic DPA (www.dpa.gr).</li>
+          </ul>
+          <p>To exercise rights: customer@endonspace.com.</p>
+        </article>
+
+        <article class="legal-block">
+          <h2>13. Cookies</h2>
+          <p>We use essential, functional, and analytics cookies to operate and improve Endon. You can manage preferences in-app and in your browser settings.</p>
+        </article>
+
+        <article class="legal-block">
+          <h2>14. Children</h2>
+          <p>Endon is intended for users aged 18 and over. If we learn data was provided by someone under 18, we delete it promptly.</p>
+        </article>
+
+        <article class="legal-block">
+          <h2>15. Third-Party Service Providers</h2>
+          <p>Current providers include Supabase (database/authentication), Stripe (payments), and F5-TTS (voice synthesis). All are contractually bound by Data Processing Agreements.</p>
+        </article>
+
+        <article class="legal-block">
+          <h2>16. Changes To This Policy</h2>
+          <p>For material changes, we provide at least 30 days notice in-app before changes take effect.</p>
+        </article>
+
+        <article class="legal-block">
+          <h2>17. Contact</h2>
+          <p>General support and privacy matters: customer@endonspace.com.</p>
+        </article>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__top">
+          <div class="footer-brand-block">
+            <div class="footer-brand-row">
+              <span class="footer-brand-icon" aria-hidden="true">ἔ</span>
+              <span class="footer-brand-name">ἔndon.</span>
+            </div>
+            <p class="footer-brand-copy">Healing at the speed of You.</p>
+          </div>
+
+          <nav class="footer-links-grid" aria-label="Footer navigation">
+            <span class="footer-nav-label">Legal</span>
+            <a href="./terms.html">Terms of Use</a>
+            <a href="./privacy.html">Privacy Policy</a>
+            <span class="footer-nav-label footer-nav-label--spaced">About</span>
+            <a href="./index.html#team">Meet the Team</a>
+          </nav>
+        </div>
+
+        <div class="footer-socials" aria-label="Social links">
+          <a href="https://www.instagram.com/endon.app?igsh=MTNmaGd5ejhqaTEyag==" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <span class="footer-social-icon footer-social-icon--ig" aria-hidden="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/>
+                <circle cx="17.1" cy="6.9" r="1.15" fill="currentColor"/>
+              </svg>
+            </span>
+            Instagram
+          </a>
+          <a href="https://www.tiktok.com/@endontherapy?_r=1&amp;_t=ZS-95ay8v9VgOY" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+            <span class="footer-social-icon footer-social-icon--tt" aria-hidden="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" fill="currentColor"/>
+              </svg>
+            </span>
+            TikTok
+          </a>
+          <a href="https://www.linkedin.com/company/endonspace/posts/?feedView=all" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <span class="footer-social-icon footer-social-icon--in" aria-hidden="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="8.1" cy="9" r="1.15" fill="currentColor"/>
+                <path d="M7 11.1v5.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M11 16.3v-5.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M11 12.7c.55-.95 1.25-1.55 2.45-1.55 1.65 0 2.55 1.02 2.55 3.2v1.98" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            LinkedIn
+          </a>
+        </div>
+
+        <p class="footer-copy">© 2026 Endon. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./main.js" defer></script>
   </body>
 </html>

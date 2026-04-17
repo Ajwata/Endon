@@ -412,12 +412,15 @@ body::before {
 
 .cta-label strong {
   display: inline-block;
-  background: linear-gradient(180deg, #7fd9ff 0%, #4aa8ff 45%, #2a63ff 100%);
+  background: linear-gradient(110deg, #b8f2ff 0%, #77d9ff 22%, #3f8fff 52%, #1d57ff 74%, #9fe8ff 100%);
+  background-size: 220% 220%;
+  background-position: 0% 50%;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
+  animation: gradientFloat 5.2s ease-in-out infinite;
 }
 
 .cta-button {
@@ -506,104 +509,6 @@ body::before {
   font-weight: 600;
   color: #0145f2;
   background: #f8fbff;
-}
-
-/* ── Integrations Section ────────────────────────────── */
-.integrations-section {
-  width: 100%;
-  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
-  padding: 100px 40px;
-  border-bottom: 1px solid #e4e8f0;
-  overflow: hidden;
-}
-
-.integrations-inner {
-  max-width: 1600px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.integrations-label {
-  margin-bottom: 40px;
-  width: fit-content;
-  box-shadow: 0 10px 24px rgba(1, 69, 242, 0.08);
-}
-
-.integrations-carousel {
-  position: relative;
-  width: 100%;
-  align-self: stretch;
-  overflow: hidden;
-  mask-image: linear-gradient(90deg, transparent, black 5%, black 95%, transparent);
-  -webkit-mask-image: linear-gradient(90deg, transparent, black 5%, black 95%, transparent);
-}
-
-.integrations-track {
-  display: flex;
-  gap: 60px;
-  animation: scroll-infinite 80s linear infinite;
-  width: max-content;
-}
-
-@keyframes scroll-infinite {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-700px);
-  }
-}
-
-.integration-card {
-  flex: 0 0 auto;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), filter 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.integration-card:hover {
-  transform: scale(1.1);
-  filter: brightness(1.1);
-}
-
-.integration-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  filter: drop-shadow(0 2px 4px rgba(1, 69, 242, 0.08));
-}
-
-@media (max-width: 768px) {
-  .integrations-section {
-    padding: 80px 20px;
-  }
-
-  .integrations-label {
-    margin-bottom: 50px;
-  }
-
-  .integrations-track {
-    gap: 40px;
-  }
-
-  .integration-card {
-    width: 70px;
-    height: 70px;
-  }
-
-  @keyframes scroll-infinite {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-550px);
-    }
-  }
 }
 
 /* ── Primary Features Section ───────────────────────── */
@@ -1066,8 +971,7 @@ body::before {
 }
 
 .why-endon p.why-endon__kicker,
-.team-head .team-kicker,
-.integrations-inner .integrations-label {
+.team-head .team-kicker {
   font-family: "Inter", sans-serif;
   font-size: 11px;
   line-height: 1;
@@ -2374,6 +2278,12 @@ body::before {
   will-change: height, opacity;
 }
 
+.faq-answer.is-closing {
+  transition:
+    height 0.62s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.36s ease;
+}
+
 .faq-answer.is-open {
   opacity: 1;
 }
@@ -2588,6 +2498,7 @@ body::before {
     radial-gradient(circle at 90% 8%, rgba(124, 205, 255, 0.18), transparent 28%),
     linear-gradient(180deg, #f8fbff 0%, #ffffff 42%);
   color: #1a2742;
+  padding-top: 92px;
 }
 
 .legal-hero,
@@ -2599,7 +2510,7 @@ body::before {
 }
 
 .legal-hero {
-  padding-top: 52px;
+  padding-top: 46px;
   padding-bottom: 24px;
 }
 
@@ -2635,11 +2546,21 @@ body::before {
 
 .legal-content {
   padding-top: 18px;
-  padding-bottom: 80px;
+  padding-bottom: 92px;
+  display: grid;
+  gap: 18px;
+}
+
+.legal-block {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(12, 69, 180, 0.12);
+  border-radius: 18px;
+  padding: 22px 22px 20px;
+  box-shadow: 0 10px 28px rgba(14, 70, 187, 0.08);
 }
 
 .legal-content h2 {
-  margin-top: 24px;
+  margin-top: 0;
   margin-bottom: 10px;
   color: #12358f;
   font-size: clamp(1.4rem, 2.2vw, 1.9rem);
@@ -2655,10 +2576,11 @@ body::before {
 .legal-content p {
   color: #344a72;
   line-height: 1.72;
+  margin: 0 0 10px;
 }
 
 .legal-content ul {
-  margin-top: 10px;
+  margin: 10px 0 4px;
   padding-left: 20px;
 }
 
@@ -2666,6 +2588,10 @@ body::before {
   margin-bottom: 8px;
   color: #344a72;
   line-height: 1.66;
+}
+
+.legal-content a {
+  color: #0f50cf;
 }
 
 /* ── Responsive ──────────────────────────────────────── */
